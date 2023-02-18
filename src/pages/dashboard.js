@@ -268,14 +268,19 @@ const Dashboard = ({ subStatus, customers }) => {
                     <h2 className={styles.customerDetailsTitle}>Your Orders</h2>
                     <div className={styles.customerOrders}>
                         {customers[0] && customers[0].ordered !== null ? (
-                            customers[0].ordered.map((order, index) => (
+                            customers[0].ordered.reverse().slice(0,4).map((order, index) => (
                                 <div className={styles.customerOrder} key={index}>
                                     <h3 className={styles.customerOrderTitle}>Order {order.ordnum}</h3>
                                     <div className={styles.customerOrderDetails}>
-                                            <p className={styles.customerOrderDetail}>Order ID: {order.id}</p>
+                                        <div className={styles.orderDetailText}>
+                                            <p className={styles.customerOrderDetail}>Product Name: {order.name}</p>
                                             <p className={styles.customerOrderDetail}>Order Date: {order.date}</p>
                                             <p className={styles.customerOrderDetail}>Order Status: {order.status}</p>
-                                            <p className={styles.customerOrderDetail}>Order Total: £{order.total}</p>
+                                            <p className={styles.customerOrderDetail}>Order Total: £{order.price}</p>
+                                        </div>
+                                        <div className={styles.orderDetailImage}>
+                                            <img className={styles.customerOrderImage} src={order.image} alt={order.name}/>
+                                        </div>
                                     </div>
                                 </div>   
                             ))
