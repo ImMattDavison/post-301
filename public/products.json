@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Blahaj",
+        "description": "Blahaj is a simple, yet powerful, IKEA SHARK!.",
+        "Image": "https://www.ikea.com/gb/en/images/products/blahaj-soft-toy-shark__0710175_pe727378_s5.jpg?f=s",
+        "price": "22",
+        "category": "Toys",
+        "retailer": "IKEA",
+        "id": "400110"
+    },
+    {
+        "name": "Stuva",
+        "description": "Stuva is a simple, yet beautiful IKEA Wardrobe",
+        "Image": "https://www.ikea.com/gb/en/images/products/smastad-platsa-wardrobe-white-white-with-3-drawers__0925776_pe788879_s5.jpg?f=s",
+        "price": "200",
+        "category": "Furniture",
+        "retailer": "IKEA",
+        "id": "281631"
+    },
+    {
+        "name": "DJUNGELSKOG",
+        "description": "DJUNGELSKOG is a simple, yet beautiful IKEA BEAR",
+        "Image": "https://www.ikea.com/gb/en/images/products/djungelskog-soft-toy-brown-bear__0710168_pe727370_s5.jpg?f=s",
+        "price": "29",
+        "category": "Toys",
+        "retailer": "IKEA",
+        "id": "868374"
+    },
+    {
+        "name": "Nike Air Force 1",
+        "description": "The Nike Air Force 1 is a classic basketball shoe that has been around since 1982. It is a low-top shoe with a leather upper and a rubber sole. The shoe is available in a variety of colors and styles.",
+        "Image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-5QFp5Z.png",
+        "price": "110",
+        "category": "Shoes",
+        "retailer": "Nike",
+        "id": "860157"
+    },
+    {
+        "name": "Nike Tech Fleece Joggers",
+        "description": "The Nike Tech Fleece Joggers are a pair of joggers that are made from a soft, warm fleece fabric. They have a tapered fit and a drawstring waistband.",
+        "Image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1a5da36f-ea3b-4a0f-afd0-e56c2a226736/sportswear-tech-fleece-joggers-zxHbKt.png",
+        "price": "80",
+        "category": "Clothing",
+        "retailer": "Nike",
+        "id": "757222"
+    },
+    {
+        "name": "Nike Air Max 270",
+        "description": "The Nike Air Max 270 is a running shoe that was released in 2018. It is a low-top shoe with a mesh upper and a rubber sole. The shoe is available in a variety of colors and styles.",
+        "Image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3e05f68e-703f-4c77-97ba-cb81fb2b22fb/air-max-270-older-shoes-8fK33P.png",
+        "price": "130",
+        "category": "Shoes",
+        "retailer": "Nike",
+        "id": "394017"
+    },
+    {
+        "name": "Banana",
+        "description": "A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.",
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/1200px-Banana-Single.jpg",
+        "price": "0.50",
+        "category": "Fruit",
+        "retailer": "Tesco",
+        "id": "406303"
+    },
+    {
+        "name": "Roast Beef",
+        "description": "Roast beef is a dish of beef that has been roasted in an oven. It is usually served with Yorkshire pudding, roast potatoes, and vegetables.",
+        "Image": "https://digitalcontent.api.tesco.com/v2/media/ghs/5d92d0fd-e3db-4313-bb76-4a7ff098a946/3f6d5120-15af-41fa-b460-b4c9e0b156a8.jpeg?h=540&w=540",
+        "price": "3.00",
+        "category": "Meat",
+        "retailer": "Tesco",
+        "id": "933732"
+    },
+    {
+        "name": "Andrex Classic Clean Toilet Tissue",
+        "description": "Andrex Classic Clean Toilet Tissue is a soft, strong and absorbent toilet tissue. It is made from 100% recycled fibre and is FSC certified.",
+        "Image": "https://digitalcontent.api.tesco.com/v2/media/ghs/3dba92f4-e39e-4b33-a442-4bcaa56eb661/c6ef735b-ce57-4949-81d9-2d2db1af1c7c_510184881.jpeg?h=540&w=540",
+        "price": "5.75",
+        "category": "Toilet Paper",
+        "retailer": "Tesco",
+        "id": "046298"
+    }
+]
