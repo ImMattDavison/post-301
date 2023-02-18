@@ -1,0 +1,24 @@
+.noCustomer{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.button{
+    background-color: var(--p3-yellow);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--p3-black);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font: var(--p3-font-montserrat);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
