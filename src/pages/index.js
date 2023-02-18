@@ -9,9 +9,10 @@ const Index = ({ user, error, isLoading }) => {
     if (error) return <div>{error.message}</div>;
 
     return(
-        <>
+        <main>
+            <h1>Home</h1>
             {user ? console.log(user) : console.log('no user')}
-        </>
+        </main>
     )
 }
 
