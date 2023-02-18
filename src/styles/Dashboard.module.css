@@ -100,6 +100,39 @@
     border-radius: 0.5rem;
 }
 
+.customerOrderDetails{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.customerOrderDetails img{
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.orderDetailText{
+    width: 75%;
+}
+
+.orderDetailImage{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderDetailImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5em;
+    padding: .5rem;
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 0.1rem var(--p3-text));
+}
+
 @media (max-width: 768px){
     .subStatus{
         flex-direction: column;
@@ -111,7 +144,7 @@
     }
 
     .customerDetailsManager{
-        width: 100%;
+        width: 100vw;
     }
 
     .customerDetailsManager input{
@@ -119,6 +152,6 @@
     }
 
     .customerOrdersManager{
-        width: 100%;
+        width: 100vw;
     }
 }
