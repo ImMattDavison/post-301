@@ -242,7 +242,7 @@ const Dashboard = ({ subStatus, customers }) => {
                             type="text"
                             name="expiryDate"
                             id="expiryDate"
-                            value = {card.expiry}
+                            value = {card.expiryDate}
                             required
                             onChange={handleCardChange}
                         >
