@@ -35,6 +35,7 @@
 .customerDetails{
     display: flex;
     flex-flow: row nowrap;
+    gap: 1rem;
 }
 
 .customerDetailsManager{
@@ -87,6 +88,18 @@
     margin-block: 1rem 1.2rem;
 }
 
+.customerOrdersManager{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-block: 1rem;
+    width: 65%;
+    padding: .5rem 1rem;
+    border: .5px solid var(--p3-text-light);
+    border-radius: 0.5rem;
+}
+
 @media (max-width: 768px){
     .subStatus{
         flex-direction: column;
@@ -98,6 +111,14 @@
     }
 
     .customerDetailsManager{
+        width: 100%;
+    }
+
+    .customerDetailsManager input{
+        width: 100%;
+    }
+
+    .customerOrdersManager{
         width: 100%;
     }
 }
