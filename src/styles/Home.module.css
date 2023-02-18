@@ -1,0 +1,16 @@
+.title{
+    box-shadow: inset 0 -25px 0 var(--p3-yellow), 0 1px 0 var(--p3-yellow);
+    font-size: 3.5rem;
+    width: fit-content;
+    padding-inline: 1rem 2.25rem;
+}
+
+.subtitle{
+    align-self: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 100%;
+    padding-inline: 1rem 2.25rem;
+    text-align: center;
+    margin-top: 6rem;
+}
