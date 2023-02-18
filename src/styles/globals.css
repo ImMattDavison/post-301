@@ -1,6 +1,9 @@
 :root{
     --p3-yellow: rgb(246, 230, 0);
     --p3-black: rgb(5, 5, 5);
+    --p3-text: rgb(10, 10, 10);
+    --p3-text-dull: rgb(100, 100, 100);
+    --p3-text-light: rgb(200, 200, 200);
 }
 
 ::-webkit-scrollbar {
@@ -15,3 +18,55 @@
     background-color: var(--p3-black);
 }
 
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--p3-font-montserrat), var(--p3-font-inter), Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: var(--p3-text);
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    transition: all 0.1s;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 560px;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 980px;
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1185px;
+        width: 100%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--p3-font-montserrat);
+    font-weight: 700;
+}
