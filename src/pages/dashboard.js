@@ -264,6 +264,28 @@ const Dashboard = ({ subStatus, customers }) => {
                         <button type='submit' onClick={handleCardSubmit} className={styles.detailsUpdateButton}>Update Payment</button>
                     </form>
                 </div>
+                <div className={styles.customerOrdersManager}>
+                    <h2 className={styles.customerDetailsTitle}>Your Orders</h2>
+                    <div className={styles.customerOrders}>
+                        {customers[0] && customers[0].ordered !== null ? (
+                            customers[0].ordered.map((order, index) => (
+                                <div className={styles.customerOrder} key={index}>
+                                    <h3 className={styles.customerOrderTitle}>Order {order.ordnum}</h3>
+                                    <div className={styles.customerOrderDetails}>
+                                            <p className={styles.customerOrderDetail}>Order ID: {order.id}</p>
+                                            <p className={styles.customerOrderDetail}>Order Date: {order.date}</p>
+                                            <p className={styles.customerOrderDetail}>Order Status: {order.status}</p>
+                                            <p className={styles.customerOrderDetail}>Order Total: £{order.total}</p>
+                                    </div>
+                                </div>   
+                            ))
+                        ) : ( 
+                            <div className={styles.customerOrder}>
+                                <h3 className={styles.customerOrderTitle}>No Orders</h3>
+                            </div> 
+                        )}
+                    </div>
+                </div>
             </section>
         </main>
     )
