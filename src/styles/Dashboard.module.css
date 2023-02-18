@@ -1,3 +1,103 @@
 .main{
     padding-top: 6rem;
 }
+
+.subStatus{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    border: .5px solid var(--p3-text-light);
+    border-radius: 0.5rem;
+    margin-block: 2rem;
+    font-size: 1.2rem;
+}
+
+.subStatusButton{
+    background-color: var(--p3-yellow);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--p3-black);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font: var(--p3-font-montserrat);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.subStatusButton:hover{
+    background-color: var(--p3-yellow-dark);
+}
+
+.customerDetails{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.customerDetailsManager{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-block: 1rem;
+    width: 35%;
+    padding: .5rem 1rem;
+    border: .5px solid var(--p3-text-light);
+    border-radius: 0.5rem;
+}
+
+.customerDetailsManager input{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font: var(--p3-font-montserrat);
+    width: 100%;
+    margin-block: 0.5rem .75rem;
+    border-radius: .5em;
+    border: .5px solid var(--p3-text-light);
+    padding: .5rem 1rem;
+}
+
+.customerDetailsManager label{
+    font-size: 1.2rem;
+    font: var(--p3-font-montserrat);
+    font-weight: 600;
+}
+
+.customerDetailsTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-block: 1rem 0;
+}
+
+.detailsUpdateButton{
+    background-color: var(--p3-yellow);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.25rem .75rem;
+    color: var(--p3-black);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font: var(--p3-font-montserrat);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-block: 1rem 1.2rem;
+}
+
+@media (max-width: 768px){
+    .subStatus{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .subStatusButton{
+        margin-block: .25rem 1rem;
+    }
+
+    .customerDetailsManager{
+        width: 100%;
+    }
+}
