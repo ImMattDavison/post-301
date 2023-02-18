@@ -65,6 +65,9 @@ export default function Header() {
                                     <Link className={styles.navLink} href="/dashboard">DASHBOARD</Link>
                                 </li>
                                 <li className={styles.navItem}>
+                                    <Link className={styles.navLink} href="/shop">SHOP</Link>
+                                </li>
+                                <li className={styles.navItem}>
                                     <Link className={styles.navLink} href="/api/auth/logout">LOGOUT</Link>
                                 </li>
                             </>
