@@ -2,6 +2,19 @@ import Head from 'next/head';
 import '@/styles/globals.css';
 import React from 'react';
 import { UserProvider } from '@auth0/nextjs-auth0/client';
+import { Inter, Montserrat } from '@next/font/google';
+
+const montserrat = Montserrat({
+    weight: ['400', '500', '600', '700', '800', '900'],
+    styles: ['normal', 'italic'],
+    subsets: ['latin'],
+})
+
+const inter = Inter({
+    weight: ['400', '500', '600', '700', '800', '900'],
+    styles: ['normal', 'italic'],
+    subsets: ['latin'],
+})
 
 export default function App({ Component, pageProps }) {
 
@@ -15,6 +28,12 @@ export default function App({ Component, pageProps }) {
 
     return (
         <UserProvider>
+            <style jsx global>{`
+                :root {
+                    --p3-font-montserrat: ${montserrat.style.fontFamily};
+                    --p3-font-inter: ${inter.style.fontFamily};
+                }
+            `}</style>
             <Head>
                 {/* Required Meta */}
                 <meta charSet="utf-8" />
