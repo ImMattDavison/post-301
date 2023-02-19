@@ -5,6 +5,14 @@
     padding-inline: 1rem 2.25rem;
 }
 
+.description{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    padding-inline: 1rem 2.25rem;
+    margin-top: 2rem;
+}
+
 .subtitle{
     align-self: center;
     font-size: 2.5rem;
@@ -13,4 +21,52 @@
     padding-inline: 1rem 2.25rem;
     text-align: center;
     margin-top: 6rem;
+}
+
+.section{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    align-items: center;
+    margin-block: 1rem;
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+.sectionImage{
+    width: 50%;
+    height: 50%;
+    padding: .5rem 1rem;
+    border-radius: 2.5rem;
+    filter: drop-shadow(0px 0px 0.3rem var(--p3-text));
+    aspect-ratio: 16/9;
+}
+
+.sectionText{
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.sectionText h3{
+    font-size: 2rem;
+    font-weight: 700;
+    width: fit-content;
+    padding-inline: .5rem 1.5rem;
+    margin-block: 0 0.5rem;
+    box-shadow: inset 0 -20px 0 var(--p3-yellow), 0 1px 0 var(--p3-yellow);
+}
+
+.sectionText p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    margin-block: 0;
+}
+
+.section:nth-child(2n+1){
+    flex-direction: row-reverse;
 }
