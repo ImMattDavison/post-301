@@ -41,7 +41,8 @@ const Shop = ({ subStatus, customers }) => {
                     price: productId.price,
                     status: 'pending',
                     date: new Date().toDateString(),
-                    ordnum: Math.floor(Date.now() / 1000)
+                    ordnum: Math.floor(Date.now() / 1000),
+                    user: user.sub
                 }
             )
 
@@ -53,7 +54,7 @@ const Shop = ({ subStatus, customers }) => {
 
             const supabase = getSupabase(user.accessToken);
 
-            if(subStatus.length == 0 || subStatus[0].is_subscribed == false){
+            if(subStatus.length !== 0 || subStatus[0].is_subscribed == false){
                 subStatus[0] && subStatus[0].is_subscribed == false ? (
                     await supabase.from('is_subscribed').update([
                         { is_subscribed: true }
@@ -72,6 +73,32 @@ const Shop = ({ subStatus, customers }) => {
                 .update({
                     ordered: ordered
                 }).eq('user_id', user.sub)
+
+            if(productId.retailer == 'IKEA'){ 
+                console.log('IKEA')
+                const { data, error } = await supabase
+                    .from('orders')
+                    .update({
+                        IKEA: ordered
+                    }).eq('id', 1)
+                console.log(data, error)
+            } else if(productId.retailer == 'Nike'){
+                console.log('Nike')
+                const { data, error } = await supabase
+                    .from('orders')
+                    .update({
+                        Nike: ordered
+                    }).eq('id', 1)
+                    console.log(data, error)
+            } else if(productId.retailer == 'Tesco'){
+                console.log('Tesco')
+                const { data, error } = await supabase
+                    .from('orders')
+                    .update({
+                        Tesco: ordered
+                    }).eq('id', 1)
+                    console.log(data, error)
+            }
 
             window.location.reload()
         }
